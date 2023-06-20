@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --blue:#3498db;
+   --dark-blue:#2980b9;
+   --red:#e74c3c;
+   --dark-red:#c0392b;
+   --black:#333;
+   --white:#fff;
+   --light-bg:#eee;
+   --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+   width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+.baner
+{
+	width:100%;
+	height:100px;
+	background-color:#F0F8FF;
+	text-align:center;
+	color:var(--black);
+}
+.profile{
+	 width: 100%;
+  background-color:#F0F8FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+ 
+}
+
+
+}
+h2
+{
+	text-align:center;
+	color:var(--black);
+	font-family: 'Poppins', sans-serif;
+}
+.
+.profiless
+{
+	
+	text-align:center;
+	color:var(--blue);
+	float:center;
+	text-align:center;
+}
+hr
+{
+
+ 
+}
+.profilowe
+{
+	height:125px;
+	border-radius:80%;
+}
+p
+{
+	text-align:center;
+	color:var(--black);
+	font-family: 'Poppins', sans-serif;
+	padding:40px;
+}
+h3
+{
+	text-align:center;
+	color:var(--black);
+	font-family: 'Poppins', sans-serif;
+}
+	div.profiless {
+  text-align:center;
+	color:var(--black);
+	
+	width:55%;
+	  background-color:#eee;
+	font-family: 'Poppins', sans-serif;
+	border-radius:30%;
+  text-align:center;
+	color:var(--black);
+	border: 1px solid blue;
+	 box-shadow: var(--box-shadow);
+	 padding:20px;
+	 margin-top:20px;
+}
+	
+}

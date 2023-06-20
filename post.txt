@@ -1,0 +1,46 @@
+<center>
+<?php
+$data = date("d-m-Y");
+$nick = $_POST['nick'];
+$post = $_POST['post'];
+if (IsSet($_POST['post'])) {
+$bbbb = '
+<table cellsapcing="0" border="1" bordercolor="#e6e6e6" cellpadding="0" rules="none" width="370">
+<tbody><tr height="20"><td bgcolor="#e6e6e6" width="45%">' . $nick . '</td><td align="center" bgcolor="#e6e6e6" width="40%"><b>'.$data.'</b></td></tr>
+<tr><td colspan="3" bgcolor="#fcfcfc">'.$post.'</td></tr></tbody></table><br>
+
+';
+$bbb = fopen ("../txt/posty.txt", "a+");
+fwrite ($bbb, $bbbb);
+echo 'Dziekujemy za skorzystanie z CHATU.! ';
+echo '<br><a href="post.php">WSTECZ</a>';
+} else {
+echo 'Musisz uzupelnic pole POST... <a href="javascript:history.go(-1)">WSTECZ</a>';
+}
+?>
+
+</center>
+<form method="POST">
+<br>
+Tymczasowy Nick:<input type="text" name="nick" maxlength="10" size="10"> (Max 10 liter lub cyfr.!)<br>
+Twoj post:<input type="text" name="post" size="50">
+<br>
+<input type="checkbox" onclick="this.form.elements['osw'].disabled = !this.checked" id="zaznacz">
+<label for="zaznacz">Oswiadcz ze to nie jest spam, obrazenie innych i jednoczesnie wysylajac ta wiadomosc wyrazasz zgode na jej pokazanie na tablicy ponizej,, nie bierzemy odpowiedzialnosci za tresc tej wiadomosci..</label> <br>
+<input type="submit" name="osw" disabled="disabled" value="Wyslij"/>
+</form>
+<br>
+<br>
+<br>
+Zapisane posty:
+<br>
+<? include ("posty.txt");?>
+</center>
+<br>
+<br>
+Uwagi:
+<br>HTML - WLACZONY <small><label for="pkh'a">Pokarz Komendy HTML'a <input id="pkh'a" type="checkbox" name="nazwa" value="Pokarz Komendy" onclick="document.getElementById('komendy').style.display = this.checked ? 'block' : 'none'; this.form.elements['nazwa2'].disabled = !this.checked" /></small>
+<div id="komendy" style="display: none">
+<input type="text" value='<br> - nastepna linijka tekstu' size="80" name="nazwa2" /><br>
+<input type="text" value='<big> TU TEKST </big> - zmienia wielkosc tekstu ' size="80" name="nazwa4" /><br>
+Powered by <a href="http://popekg.cba.pl">PopekG.cba.pl</a>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <style>
+    .chat-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .message {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Chat</h2>
+    <div id="chat-messages">
+      <!-- Tutaj będą wyświetlane wiadomości -->
+    </div>
+    <form id="message-form" method="post" action="chat.php">
+      <input type="text" name="message" placeholder="Wpisz wiadomość" required>
+      <button type="submit">Wyślij</button>
+    </form>
+  </div>
+
+  <script>
+    function loadMessages() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            document.getElementById('chat-messages').innerHTML = xhr.responseText;
+          } else {
+            console.error('Wystąpił błąd podczas pobierania wiadomości.');
+          }
+        }
+      };
+      xhr.open('GET', 'get_messages.php', true);
+      xhr.send();
+    }
+
+    setInterval(loadMessages, 2000); // Pobieraj wiadomości co 2 sekundy
+  </script>
+</body>
+</html>
