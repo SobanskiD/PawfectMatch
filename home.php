@@ -59,14 +59,14 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Witamy w Pawfect Match!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <header>
     <div class="baner">
-        <h1> Pawfect Match!</h1> <a href="wpis.php"><img src="home2.png" alt="Oglądaj wpisy!" style="border: 0"></a>
-        <a href="index.php"><img src="Mariuszek.png" alt="Poznaj przyjaciół!" style="border: 0"></a>
-		<a href="twojewpisy.php"><img src="home2.png" alt="Twoje wpisy!" style="border: 0"></a>
+        <h1> Pawfect Match!</h1> <a href="wpis.php">Oglądaj wpisy!</a>
+        <a href="index.php">Poznaj przyjaciół!</a>
+		<a href="twojewpisy.php">Profil</a>
         <!--relation to text messages -->
     </div>
 </header>

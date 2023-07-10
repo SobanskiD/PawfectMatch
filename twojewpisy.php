@@ -25,14 +25,14 @@ $posts = mysqli_fetch_all($posts_query, MYSQLI_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twój profil </title>
-    <link rel="stylesheet" href="styltablica.css">
+    <link rel="stylesheet" href="posts.css">
 </head>
 
 <header>
     <div class="baner">
         <h1> Pawfect Match!</h1> <a href="wpis.php"><img src="home2.png" alt="Oglądaj wpisy!" style="border: 0"></a>
         <a href="home.php"><img src="Mariuszek.png" alt="Poznaj przyjaciół!" style="border: 0"></a>
-        <!--relation to text messages -->
+        
     </div>
 </header>
 

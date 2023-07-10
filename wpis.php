@@ -18,7 +18,7 @@ $select = mysqli_query($conn, "SELECT wpisy.*, user_form.image AS user_image, us
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wpisy</title>
-    <link rel="stylesheet" href="styltablica.css">
+    <link rel="stylesheet" href="posts.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function likePost(postId) {
@@ -66,9 +66,9 @@ $select = mysqli_query($conn, "SELECT wpisy.*, user_form.image AS user_image, us
 
 <header>
     <div class="baner">
-        <h1> Pawfect Match!</h1> <a href="wpis.php"><img src="home2.png" alt="Oglądaj wpisy!" style="border: 0"></a>
-        <a href="home.php"><img src="Mariuszek.png" alt="Poznaj przyjaciół!" style="border: 0"></a>
-        <!--relation to text messages -->
+        <h1> Pawfect Match!</h1> <br><a href="home.php">Strona główna</a>
+        <a href="home.php">Poznaj przyjaciół!</a>
+      
     </div>
 </header>
 
@@ -85,7 +85,7 @@ $select = mysqli_query($conn, "SELECT wpisy.*, user_form.image AS user_image, us
                 }
                 echo '<h3>' . $row['user_name'] . '</h3>';
                 echo '<h4>' . $row['title'] . '</h4>';
-                echo '<p>' . $row['content'] . '</p>';
+                echo '<h5>' . $row['content'] . '</h5>';
 
                 if (!empty($row['image'])) {
                     echo '<img src="uploaded_images/' . $row['image'] . '" class="post">';
@@ -94,6 +94,7 @@ $select = mysqli_query($conn, "SELECT wpisy.*, user_form.image AS user_image, us
                     echo '<video controls>';
                     echo '<source src="uploaded_videos/' . $row['video'] . '" type="video/mp4">';
                     echo '</video>';
+					echo'<hr>';
                 }
 
                 // Licznik polubień

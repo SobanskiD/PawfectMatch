@@ -5,12 +5,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poznaj przyjaciół!</title>
-    <link rel="stylesheet" href="stylprof.css">
+    <link rel="stylesheet" href="Friendstyle.css">
 	
 </head>
 <header>
 <div class="baner">
-<h1> Pawfect Match! </h1> <br> <h3> Znajdź swoich przyjaciół! </h3>
+<h1> Pawfect Match! </h1> <br> <a href="wpis.php">Oglądaj wpisy!</a>
+        <a href="home.php">Strona główna</a>
+		<a href="twojewpisy.php">Profil</a> <br>
+		<h1> Znajdź swoich przyjaciół! </h1>
 </div>
 </header>
 <body>

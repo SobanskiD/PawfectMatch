@@ -1,0 +1,149 @@
+ :root {
+        --dark-red: #c0392b;
+        --light-bg: #F5F5F5;
+		
+    }
+
+    body {
+        background-color: var(--light-bg);
+    }
+
+    /* Header Styles */
+    header {
+        background-color: var(--dark-red);
+        padding: 10px;
+        color: white;
+    }
+
+    .baner {
+       width:100%;
+	height:85px;
+	background-color: var(--dark-red);
+	text-align:center;
+	color:var(--white);
+    }
+
+    .baner h1 {
+        margin: 0;
+		text-align:center;
+	
+    }
+
+    /* Container Styles */
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Post Styles */
+    .wpis {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    h4 {
+        margin: 10px 0;
+       
+    }
+
+    p {
+        margin: 0;
+    }
+
+    /* Likes Section Styles */
+    .likes-section {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .likes-section button {
+        background-color: #3498db;
+        border: none;
+        cursor: pointer;
+        font-size: 8px;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+		
+    }
+
+    .likes-section span {
+        margin-left: 5px;
+        font-size: 14px;
+        color: #777;
+    }
+
+    /* Comments Section Styles */
+    .comments-section {
+        margin-top: 20px;
+    }
+
+    .comment {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .comment img.avatar-comment {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+
+    .comment-user {
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .comment p {
+        margin: 0;
+        color: #555;
+    }
+
+    /* Comment Form Styles */
+    .comment-form {
+        margin-top: 20px;
+    }
+
+    .comment-form input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .comment-form button {
+        background-color: #3498db;
+        border: none;
+        cursor: pointer;
+        font-size: 8px;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+	}
+	hr{
+		color:red;
+	}

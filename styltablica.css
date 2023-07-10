@@ -1,107 +1,162 @@
-/* Global styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fafafa;
-  color: #333;
-}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+        /* Header Styles */
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
 
-/* Wpis styles */
-.wpisy {
-  display: grid;
-  grid-gap: 20px;
-  
-}
+        .baner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.wpis {
-	font-family: 'Poppins', sans-serif;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 5px;
-  padding: 20px;
-}
+        .baner h1 {
+            margin: 0;
+        }
 
-.avatar {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%;
-  float: left;
-  margin-right: 10px;
-}
+        .baner img {
+            height: 30px;
+            margin-left: 10px;
+        }
 
-.wpis .user-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
 
-.wpis .user-info h3 {
-	font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  margin: 0;
-  font-weight: 500;
-}
+        /* Post Styles */
+        .wpis {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
 
-.wpis h4 {
-	font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  font-weight: 500;
-  clear: both;
-}
+        .wpis h3 {
+            margin: 0;
+            font-size: 18px;
+        }
 
-.wpis p {
-	font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  margin: 10px 0;
-  clear: both;
-}
+        .wpis h4 {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #555;
+        }
 
-.wpis video {
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 10px;
-}
+        .wpis p {
+            margin-top: 10px;
+            color: #777;
+        }
 
-/* Banner styles */
-.baner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #dbdbdb;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        .wpis img.avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
 
-.baner img {
-  height: 30px;
-}
+        .wpis img.post {
+            max-width: 100%;
+            margin-top: 10px;
+        }
 
-.baner h1 {
-	font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-  color: #333;
-}
+        .wpis video {
+            width: 100%;
+            margin-top: 10px;
+        }
 
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-  .wpisy {
-    grid-template-columns: 1fr;
-  }
-  
-  .post {
-    width:500px;
-	border-radius:5px;
-	margin-top:10px;
-	
-  }
+        /* Likes Section Styles */
+        .likes-section {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
 
+        .likes-section button {
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #555;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        .likes-section button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .likes-section span {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Comments Section Styles */
+        .comments-section {
+            margin-top: 20px;
+        }
+
+        .comment {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .comment img.avatar-comment {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .comment-user {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .comment p {
+            margin: 0;
+            color: #555;
+        }
+
+        /* Comment Form Styles */
+        .comment-form {
+            margin-top: 20px;
+        }
+
+        .comment-form input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .comment-form button {
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #555;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .comment-form button:hover {
+            background-color: #f0f0f0;
+        }

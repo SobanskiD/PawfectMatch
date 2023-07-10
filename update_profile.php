@@ -6,16 +6,17 @@ $user_id = $_SESSION['user_id'];
 
 if (isset($_POST['update_profile'])) {
     //checking mail
-    $update_opis = mysqli_real_escape_string($conn, $_POST['update_opis']);
-    $update_rasa = mysqli_real_escape_string($conn, $_POST['update_rasa']);  //update of text information
+     //update of text information
     $update_name = mysqli_real_escape_string($conn, $_POST['update_name']);
     $update_email = mysqli_real_escape_string($conn, $_POST['update_email']);
+	$update_opis = mysqli_real_escape_string($conn, $_POST['update_opis']);
+    $update_rasa = mysqli_real_escape_string($conn, $_POST['update_rasa']); 
 
     // Email validation
     if (!filter_var($update_email, FILTER_VALIDATE_EMAIL)) {
         $message[] = 'Nieprawidłowy adres email!';
     } else {
-        mysqli_query($conn, "UPDATE `user_form` SET name = '$update_name', email = '$update_email' WHERE id = '$user_id'") or die('query failed');
+        mysqli_query($conn, "UPDATE `user_form` SET name = '$update_name', email = '$update_email',opis = '$update_opis',rasa = '$update_rasa' WHERE id = '$user_id'") or die('query failed');
         $message[] = 'Pomyślnie zaktualizowano profil!';
     }
 
